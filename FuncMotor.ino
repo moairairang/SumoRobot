@@ -34,6 +34,7 @@ void right(int speed, int de) {
   digitalWrite(5, LOW);
   delay(de);
 }
+
 void Mrun(int leftspeed, bool dirleft, int rightspeed, bool dirright,int de) {
   if (dirleft == true and dirright == true) {
     analogWrite(11, leftspeed);
