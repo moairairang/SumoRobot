@@ -72,3 +72,8 @@ void Mrun(int leftspeed, bool dirleft, int rightspeed, bool dirright,int de) {
     delay(de);
   }
 }
+
+void backturn(){
+  Mrun(50, false, 65, false, 300);
+  Mrun(50, true, 65, false, 290);
+}

@@ -2,8 +2,8 @@ void ReadSensor(){
   l2 = analogRead(A0);
   l = analogRead(A1);
   m = analogRead(A2);
-  r = analogRead(A3);
-  r2 = analogRead(A4);
+  r = analogRead(A4);
+  r2 = analogRead(A5);
 }
 void ShowSensor(){
   ReadSensor();

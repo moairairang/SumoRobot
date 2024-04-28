@@ -24,9 +24,10 @@ int Error;
 int output,LeftOutput,RightOutput,RightSpeed,LeftSpeed;
 int PreError;
 int Integral;
+
 float Kp = 1.0;
 float Ki = 0.0;
-float Kd = 0.0;
+float Kd = 1.0;
 
 
 void setup() {
@@ -45,13 +46,19 @@ void setup() {
   pinMode(A4, INPUT);
   pinMode(A5, INPUT);
   
+  delay(5000);
   // PCICR |= B00000100;   //Bit2 = 1 -> "PCIE2" enabeled (PCINT16 to PCINT23)
   // PCMSK2 |= B00110000;  //D4 and D5 will trigger interrupt
-  // attachInterrupt(digitalPinToInterrupt(2), ddd, RISING);
+  //attachInterrupt(digitalPinToInterrupt(2),backturn, RISING);
 }
 
 void loop() {
   NOOB(false);
+  // ConvertSensornofilter();
+  // CallErrornofilter();
+  // PID();
+  //Mrun(40, true, 55, true, 1);
+  
 }
 
 

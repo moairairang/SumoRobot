@@ -14,11 +14,11 @@ void NOOB(bool FilterState) {
       Mrun(150, true, 165, true, 1);
     }
 
-    else if (cl == 0 || cl2 == 0) {
+    else if (cr == 0 || cr2 == 0) {
       Mrun(100, false, 115, true, 1);
     }
 
-    else if (cr == 0 || cr2 == 0) {
+    else if (cl == 0 || cl2 == 0) {
       Mrun(100, true, 115, false, 1);
     }
   }
