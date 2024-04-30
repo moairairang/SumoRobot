@@ -26,8 +26,8 @@ void CallError() {
 void PID() {
   output = (Kp * Error) + (Ki * Integral) + Kd * (Error - PreError);
 
-  LeftOutput = 0 + output;
-  RightOutput = 0 - output;
+  LeftOutput = 0+output;
+  RightOutput = 0-output;
   output = constrain(output, -255, 255);
 
   if (R == 0) {

@@ -35,8 +35,8 @@ void right(int speed, int de) {
   delay(de);
 }
 
-void Mrun(int leftspeed, bool dirleft, int rightspeed, bool dirright,int de) {
-  if (dirleft == true and dirright == true) {
+void Mrun(int leftspeed, bool dirleft, int rightspeed, bool diright,int de) {
+  if (dirleft == true and diright == true) {
     analogWrite(11, leftspeed);
     digitalWrite(9, HIGH);
     digitalWrite(10, LOW);
@@ -45,7 +45,7 @@ void Mrun(int leftspeed, bool dirleft, int rightspeed, bool dirright,int de) {
     digitalWrite(5, LOW);
     delay(de);
   }
-  if (dirleft == false and dirright == false) {
+  if (dirleft == false and diright == false) {
     analogWrite(11, leftspeed);
     digitalWrite(9, LOW);
     digitalWrite(10, HIGH);
@@ -54,7 +54,7 @@ void Mrun(int leftspeed, bool dirleft, int rightspeed, bool dirright,int de) {
     digitalWrite(5, HIGH);
     delay(de);
   }
-  if (dirleft == true and dirright == false) {
+  if (dirleft == true and diright == false) {
     analogWrite(11, leftspeed);
     digitalWrite(9, HIGH);
     digitalWrite(10, LOW);
@@ -63,7 +63,7 @@ void Mrun(int leftspeed, bool dirleft, int rightspeed, bool dirright,int de) {
     digitalWrite(5, HIGH);
     delay(de);
   }
-  if (dirleft == false and dirright == true) {
+  if (dirleft == false and diright == true) {
     analogWrite(11, leftspeed);
     digitalWrite(9, LOW);
     digitalWrite(10, HIGH);

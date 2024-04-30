@@ -25,8 +25,8 @@ int output,LeftOutput,RightOutput,RightSpeed,LeftSpeed;
 int PreError;
 int Integral;
 
-float Kp = 5.0;
-float Ki = 1.0;
+float Kp = 10.0;
+float Ki = 0.0;
 float Kd = 1.0;
 
 
@@ -53,11 +53,10 @@ void setup() {
 }
 
 void loop() {
-  //NOOB(false);
-  //ReadSensorFloor();
-  //ConvertSensornofilter();
-  //Mrun(40, true, 55, true, 1);
-  PIDNP();
+  ReadSensorFloor();
+  ConvertSensornofilter();
+  NOOB();
+  //PIDNP();
   
 }
 
