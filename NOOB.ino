@@ -1,26 +1,3 @@
-// void NOOB() {
-//   if (R == 0) {
-//     Mrun(50, false, 65, false, 350);
-//     Mrun(50, true, 65, false, 290);
-//   } else if (L == 0) {
-//     Mrun(50, false, 65, false, 350);
-//     Mrun(50, false, 65, true, 290);
-//   } else {
-//     if (cm == 0) {
-//       Mrun(240, true, 255, true, 1);
-//     }
-
-//     else if (cl == 0 or cl2 == 0) {
-//       Mrun(100, true, 115, false, 1);
-//     }
-
-//     else if (cr == 0 or cr2 == 0) {
-//       Mrun(100, false, 115, true, 1);
-//     } else {
-//       Mrun(40, true, 55, true, 1);
-//     }
-//   }
-// }
 void NOOB() {
   if (R == 0) {
     Mrun(50, false, 65, false, 350);

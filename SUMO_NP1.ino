@@ -1,4 +1,3 @@
-//bool D4_state = LOW;
 int L;
 int R;
 int l2;
@@ -47,9 +46,6 @@ void setup() {
   pinMode(A5, INPUT);
   
   delay(5000);
-  // PCICR |= B00000100;   //Bit2 = 1 -> "PCIE2" enabeled (PCINT16 to PCINT23)
-  // PCMSK2 |= B00110000;  //D4 and D5 will trigger interrupt
-  //attachInterrupt(digitalPinToInterrupt(2),backturn, RISING);
 }
 
 void loop() {
@@ -59,28 +55,4 @@ void loop() {
   //PIDNP();
   
 }
-
-
-// ISR(PCINT2_vect) {
-//   if (digitalRead(4) && D4_state) {
-//     D4_state = HIGH;
-//      //Serial.println("Interrupt on1");
-//     // digitalWrite(5,HIGH);
-//     // digitalWrite(6,LOW);
-//     // analogWrite(9,50);
-//     //Serial.end();
-//     //Pin D4 triggered the ISR
-//   } else if (digitalRead(4) && !D4_state) {
-//     D4_state = LOW;
-//     Serial.println("Interrupt on2");
-//   //   digitalWrite(5,LOW);
-//   // digitalWrite(6,HIGH);
-//   // analogWrite(9,30);
-//   // delay(500);
-//   }
-// }
-
-// void ddd(){
-//   Serial.println("Interrupt on");
-// }
 
