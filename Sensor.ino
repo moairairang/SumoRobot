@@ -37,10 +37,10 @@ void ConvertSensor(){
 }
 void ConvertSensornofilter(){
   ReadSensor();
-  if (l2 > 300) cl2 = 0; else cl2 = 1;
-  if (l > 300) cl = 0; else cl = 1;
-  if (m > 300) cm = 0; else cm = 1;
-  if (r > 300) cr = 0; else cr = 1;
-  if (r2 > 300) cr2 = 0; else cr2 = 1;
+  if (l2 > 200) cl2 = 0; else cl2 = 1;
+  if (l > 200) cl = 0; else cl = 1;
+  if (m > 200) cm = 0; else cm = 1;
+  if (r > 200) cr = 0; else cr = 1;
+  if (r2 > 200) cr2 = 0; else cr2 = 1;
   //Serial.println(String(cl2) + "\t" + String(cl) + "\t" + String(cm) + "\t" + String(cr) + "\t"+ String(cr2));
 }
