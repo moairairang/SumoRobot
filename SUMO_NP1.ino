@@ -62,17 +62,17 @@ void setup() {
   if (state7 == HIGH && state8 == LOW) {
     leftstrat();
     walkspeedright = 40;
-    walkspeedright = 55;
+    walkspeedleft = 55;
   } else if (state7 == LOW && state8 == HIGH) {
     rightstrat();
     walkspeedright = 40;
-    walkspeedright = 55;
+    walkspeedleft = 55;
   } else if (state7 == LOW && state8 == LOW) {
     walkspeedright = 40;
-    walkspeedright = 55;
+    walkspeedleft = 55;
   }else{
     walkspeedright = 25;
-    walkspeedright = 35;
+    walkspeedleft = 35;
   }
 }
 
@@ -88,12 +88,12 @@ void loop() {
 }
 
 void leftstrat() {
-  Mrun(150, true, 165, true, 60);
+  Mrun(150, true, 165, true, 125);
   Mrun(100, true, 115, false, 150);
   Mrun(35, true, 170, true, 600);
 }
 void rightstrat() {
-  Mrun(165, true, 180, true, 60);
+  Mrun(165, true, 180, true, 125);
   Mrun(100, false, 115, true, 150);
-  Mrun(155, true, 50, true, 550);
+  Mrun(170, true, 50, true, 600);
 }
